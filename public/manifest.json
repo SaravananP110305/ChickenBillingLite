@@ -1,0 +1,30 @@
+{
+  "short_name": "Chicken Bill",
+  "name": "Chicken Billing Lite",
+  "icons": [
+    {
+      "src": "./chicken-icon-192.jpg",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./chicken-icon-192.jpg",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./chicken-icon-192.jpg",
+      "type": "image/svg+xml",
+      "sizes": "150x150"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#dc2626",
+  "background_color": "#ffffff",
+  "orientation": "portrait-primary",
+  "categories": ["business", "food"],
+  "description": "A responsive billing system for non-vegetarian shops"
+}

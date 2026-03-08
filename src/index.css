@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-red-50 text-gray-900;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-red-600 text-white px-3 sm:px-4 py-2 rounded-md hover:bg-red-700 transition-colors duration-200 font-medium active:scale-95 active:duration-75;
+  }
+  
+  .btn-secondary {
+    @apply bg-white text-red-600 border-2 border-red-600 px-3 sm:px-4 py-2 rounded-md hover:bg-red-50 transition-colors duration-200 font-medium active:scale-95 active:duration-75;
+  }
+  
+  .card {
+    @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-200 border-l-4 border-red-600;
+  }
+  
+  .input-field {
+    @apply w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent text-base sm:text-sm;
+  }
+  
+  .table-header {
+    @apply px-2 sm:px-4 py-2 sm:py-3 text-left text-xs font-medium text-red-800 uppercase bg-red-50;
+  }
+  
+  .table-cell {
+    @apply px-2 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm text-gray-700;
+  }
+  
+  .stat-card {
+    @apply bg-white rounded-lg shadow-md p-4 sm:p-6 border-b-4 border-red-600 hover:shadow-lg transition-shadow duration-200;
+  }
+  
+  .nav-link-active {
+    @apply bg-red-50 text-red-700 border-r-4 border-red-600;
+  }
+  
+  .nav-link {
+    @apply flex items-center px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-base text-gray-700 hover:bg-red-50 hover:text-red-700 transition-colors duration-200;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fca5a5;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f87171;
+}
